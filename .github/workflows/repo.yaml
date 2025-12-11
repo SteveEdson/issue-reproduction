@@ -40,6 +40,9 @@ jobs:
       - name: Clear caches
         run: php artisan cache:clear && php please stache:clear  
 
+      - name: Show DB content
+        run: php artisan app:show-entries
+
       - name: Run eloquent export-entries
         run: php artisan statamic:eloquent:export-collections --force
 
