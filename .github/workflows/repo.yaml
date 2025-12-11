@@ -55,6 +55,9 @@ jobs:
       - name: Remove content directory
         run: rm -rf content
 
+      - name: Clear caches
+        run: php artisan cache:clear && php please stache:clear  
+
       - name: Run eloquent export-entries
         run: php artisan statamic:eloquent:export-entries
 
