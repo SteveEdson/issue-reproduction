@@ -1,0 +1,170 @@
+greece_english:
+  name: 'MEU-UK (EN_GB)'
+  url: /gb/en/
+  locale: en_GB
+  lang: en_GB
+  attributes:
+    frontend_name: English
+    continent: Europe
+    country: 'United Kingdom'
+    order: 16
+be_nl:
+  name: 'MEU-BEL (NL_BE)'
+  url: /be/nl/
+  locale: nl_BE
+  lang: nl_BE
+  attributes:
+    frontend_name: Dutch
+    continent: Europe
+    country: Belgium
+    order: 1
+ru_ru:
+  name: 'MER (RU_RU)'
+  url: /ru/ru/
+  locale: ru_RU
+  lang: ru_RU
+  attributes:
+    frontend_name: Russian
+    continent: Europe
+    country: 'Russian Federation'
+    order: 12
+tr_tr:
+  name: 'METR (TR_TR)'
+  url: /tr/tr/
+  locale: tr_TR
+  lang: tr_TR
+  attributes:
+    frontend_name: Turkish
+    continent: Europe
+    country: Turkey
+    order: 15
+be_fr:
+  name: 'MEU-BEL (FR_BE)'
+  url: /be/fr/
+  locale: fr_BE
+  lang: fr_BE
+  attributes:
+    frontend_name: French
+    continent: Europe
+    country: Belgium
+    order: 2
+be_de:
+  name: 'MEU-BEL (DE_BE)'
+  url: /be/de/
+  locale: de_BE
+  lang: de_BE
+  attributes:
+    frontend_name: German
+    continent: Europe
+    country: Belgium
+    order: 3
+fr_fr:
+  name: 'MEU-FRA (FR_FR)'
+  url: /fr/fr/
+  locale: fr_FR
+  lang: fr_FR
+  attributes:
+    frontend_name: French
+    continent: Europe
+    country: France
+    order: 4
+de_de:
+  name: 'MEU-GER (DE_DE)'
+  url: /de/de/
+  locale: de_DE
+  lang: de_DE
+  attributes:
+    frontend_name: German
+    continent: Europe
+    country: Germany
+    order: 5
+ie_en:
+  name: 'MEU-IRE (EN_IE)'
+  url: /ie/en/
+  locale: en_IE
+  lang: en_IE
+  attributes:
+    frontend_name: English
+    continent: Europe
+    country: Ireland
+    order: 6
+ie_ga:
+  name: 'MEU-IRE (GA_IE)'
+  url: /ie/ga/
+  locale: ga_IE
+  lang: ga_IE
+  attributes:
+    frontend_name: Irish
+    continent: Europe
+    country: Ireland
+    order: 7
+it_it:
+  name: 'MEU-IT (IT_IT)'
+  url: /it/it/
+  locale: it_IT
+  lang: it_IT
+  attributes:
+    frontend_name: Italian
+    continent: Europe
+    country: Italy
+    order: 8
+no_no:
+  name: 'MEU-NOR (NO_NO)'
+  url: /no/no/
+  locale: no_NO
+  lang: no_NO
+  attributes:
+    frontend_name: Norwegian
+    continent: Europe
+    country: Norway
+    order: 9
+pl_pl:
+  name: 'MEU-PL (PL_PL)'
+  url: /pl/pl/
+  locale: pl_PL
+  lang: pl_PL
+  attributes:
+    frontend_name: Polish
+    continent: Europe
+    country: Poland
+    order: 10
+pt_pt:
+  name: 'MEU-PT (PT_PT)'
+  url: /pt/pt/
+  locale: pt_PT
+  lang: pt_PT
+  attributes:
+    frontend_name: Portuguese
+    continent: Europe
+    country: Portugal
+    order: 11
+es_es:
+  name: 'MEU-SP (ES_ES)'
+  url: /es/es/
+  locale: es_ES
+  lang: es_ES
+  attributes:
+    frontend_name: Spanish
+    continent: Europe
+    country: Spain
+    order: 13
+se_sv:
+  name: 'MEU-SWE (SV_SE)'
+  url: /se/sv/
+  locale: sv_SE
+  lang: sv_SE
+  attributes:
+    frontend_name: Swedish
+    continent: Europe
+    country: Sweden
+    order: 14
+albanian:
+  name: Albanian
+  url: /al/sq/
+  locale: al_SQ
+  lang: al_SQ
+  attributes:
+    frontend_name: Albanian
+    continent: Europe
+    country: Albania
+    order: '40'
