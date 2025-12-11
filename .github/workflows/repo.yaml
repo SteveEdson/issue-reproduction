@@ -43,7 +43,7 @@ jobs:
       - name: Show DB content
         run: php artisan app:show-entries
 
-      - name: Run eloquent export-entries
+      - name: Run eloquent export-collections
         run: php artisan statamic:eloquent:export-collections --force
 
       - name: Run eloquent export-entries

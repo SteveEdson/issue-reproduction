@@ -29,7 +29,7 @@ class ShowEntriesInDB extends Command
         $entries = DB::table('entries')->get();
         $this->info('There are ' . $entries->count() . ' entries in the database:');
         foreach ($entries as $entry) {
-            $this->line('ID: ' . $entry->id . ', Slug: ' . $entry->slug . ', Collection: ' . $entry->collection . ', Site: ' . $entry->site);
+            $this->line('ID: ' . $entry->id . ', Slug: ' . $entry->slug . ', Collection: ' . $entry->collection . ', Site: ' . $entry->site . ', Origin: ' . $entry->origin_id);
         }   
     }
 }
