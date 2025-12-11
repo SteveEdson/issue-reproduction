@@ -6,18 +6,18 @@ return [
     'table_prefix' => env('STATAMIC_ELOQUENT_PREFIX', ''),
 
     'asset_containers' => [
-        'driver' => 'eloquent',
+        'driver' => 'file',
         'model' => \Statamic\Eloquent\Assets\AssetContainerModel::class,
     ],
 
     'assets' => [
-        'driver' => 'eloquent',
+        'driver' => 'file',
         'model' => \Statamic\Eloquent\Assets\AssetModel::class,
         'asset' => \Statamic\Eloquent\Assets\Asset::class,
     ],
 
     'blueprints' => [
-        'driver' => 'eloquent',
+        'driver' => 'file',
         'model' => \Statamic\Eloquent\Fields\BlueprintModel::class,
         'namespaces' => 'all',
     ],
@@ -43,7 +43,7 @@ return [
     ],
 
     'fieldsets' => [
-        'driver' => 'eloquent',
+        'driver' => 'file',
         'model' => \Statamic\Eloquent\Fields\FieldsetModel::class,
     ],
 
@@ -58,7 +58,7 @@ return [
     ],
 
     'global_sets' => [
-        'driver' => 'eloquent',
+        'driver' => 'file',
         'model' => \Statamic\Eloquent\Globals\GlobalSetModel::class,
     ],
 
@@ -68,13 +68,13 @@ return [
     ],
 
     'navigations' => [
-        'driver' => 'eloquent',
+        'driver' => 'file',
         'model' => \Statamic\Eloquent\Structures\NavModel::class,
     ],
 
     'navigation_trees' => [
-        'driver' => 'eloquent',
-        'model' => \Statamic\Eloquent\Structures\TreeModel::class,
+        'driver' => 'file',
+        'model' => \Statamic\Eloquent\Structures\NavTree::class,
         'tree' => \Statamic\Eloquent\Structures\NavTree::class,
     ],
 
@@ -84,22 +84,22 @@ return [
     ],
 
     'taxonomies' => [
-        'driver' => 'eloquent',
+        'driver' => 'file',
         'model' => \Statamic\Eloquent\Taxonomies\TaxonomyModel::class,
     ],
 
     'terms' => [
-        'driver' => 'eloquent',
+        'driver' => 'file',
         'model' => \Statamic\Eloquent\Taxonomies\TermModel::class,
     ],
 
     'tokens' => [
-        'driver' => 'eloquent',
+        'driver' => 'file',
         'model' => \Statamic\Eloquent\Tokens\TokenModel::class,
     ],
 
     'sites' => [
-        'driver' => 'eloquent',
+        'driver' => 'file',
         'model' => \Statamic\Eloquent\Sites\SiteModel::class,
     ],
 ];
