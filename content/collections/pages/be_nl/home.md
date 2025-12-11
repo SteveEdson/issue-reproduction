@@ -1,5 +1,5 @@
 ---
-id: 7b3055be-96d9-48e6-b195-1e9f45e7d713
+id: f86b0c17-6b64-489a-bc0e-8e22df19dd52
 blueprint: page
 title: Home
 template: home
