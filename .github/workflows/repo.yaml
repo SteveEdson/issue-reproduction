@@ -41,6 +41,9 @@ jobs:
         run: php artisan cache:clear && php please stache:clear  
 
       - name: Run eloquent export-entries
+        run: php artisan statamic:eloquent:export-collections --force
+
+      - name: Run eloquent export-entries
         run: php artisan statamic:eloquent:export-entries
 
       - name: Install tree
