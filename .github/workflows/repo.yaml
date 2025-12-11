@@ -1,0 +1,65 @@
+name: Reproduce Issue
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+          extensions: mbstring, xml, ctype, json, bcmath, sqlite3
+          coverage: none
+
+      - name: Install Composer dependencies
+        run: composer install --no-interaction --prefer-dist
+
+      - name: Create .env file
+        run: |
+          cat > .env << 'EOF'
+          APP_NAME=Statamic
+          APP_ENV=local
+          APP_KEY=
+          APP_DEBUG=true
+          APP_URL=http://localhost
+
+          DB_CONNECTION=sqlite
+
+          STATAMIC_LICENSE_KEY=
+          STATAMIC_PRO_ENABLED=true
+          STATAMIC_STACHE_WATCHER=auto
+          STATAMIC_STATIC_CACHING_STRATEGY=null
+          STATAMIC_REVISIONS_ENABLED=false
+          STATAMIC_GRAPHQL_ENABLED=false
+          STATAMIC_API_ENABLED=false
+          STATAMIC_GIT_ENABLED=false
+          EOF
+
+      - name: Generate application key
+        run: php artisan key:generate
+
+      - name: Run migrations
+        run: php artisan migrate --force
+
+      - name: Remove content directory
+        run: rm -rf content
+
+      - name: Run eloquent export-entries
+        run: php artisan statamic:eloquent:export-entries
+
+      - name: Install tree
+        run: sudo apt-get install -y tree
+
+      - name: Show content directory structure
+        run: tree content
